@@ -17,6 +17,7 @@ header h1 {
   color: white;
   text-shadow: 2px 2px 2px red;
   height: 100px;
+  padding-top: 30px;
 }
 
 main {
