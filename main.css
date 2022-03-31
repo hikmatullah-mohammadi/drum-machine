@@ -1,0 +1,84 @@
+:root {
+  --bg-color-primary: rgb(130, 130, 214);
+  --bg-color-secondary: rgb(207, 116, 116);
+}
+body {
+  background: var(--bg-color-secondary);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  background: var(--bg-color-primary);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px red;
+  height: 100px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+#drum-pads {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.drum-pad {
+  background:var(--bg-color-primary);
+  height: 50px;
+  width: 80%;
+  margin: 1px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.drum-pad:active {
+  background: var(--bg-color-secondary);
+}
+
+#control {
+  width: 50%;
+  margin-top: 10px;
+  background-color: var(--bg-color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#display, #bg-piano {
+  width: 80%;
+  height: 50px;
+  background: var(--bg-color-secondary);
+  text-align: center;
+  border: 2px groove var(--bg-color-secondary);
+  padding-top: 15px;
+  color: white;
+}
+
+#bg-piano-chkbox {
+  accent-color: var(--bg-color-secondary);
+}
+footer {
+  height: 50px;
+  background-color: var(--bg-color-primary);
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px red;
+  font-size: 1.5em;
+}
